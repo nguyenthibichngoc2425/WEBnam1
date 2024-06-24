@@ -225,13 +225,9 @@ footer {
 .footer-bottom a:hover {
     color: #fff;
 }
-@media (min-width: 740px) and (max-width: 1023px){
-   
-}
-@media (max-width: 739px){
-    .navbar{
-        width:320px;
-        display: flex;
-        padding :0 10px;
+
+@media (max-width: 739px) {
+    .navbar .menu{
+        display:grid;
     }
 }

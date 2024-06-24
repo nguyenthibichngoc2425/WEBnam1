@@ -4,16 +4,13 @@
     box-sizing: border-box;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Times New Roman', Times, serif;
-
 }
 
-
-body{
+body {
     background-color: rgba(151, 112, 230, 0.3);
-
 }
-/* menu */
 
+/* menu */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -230,7 +227,6 @@ label:hover {
 }
 
 /* Footer styles */
-
 footer {
     background-color: #333;
     color: #fff;
@@ -267,10 +263,10 @@ footer {
     color: #ddd;
     text-decoration: none;
 }
-.footer-section.about{
+
+.footer-section.about {
     padding: 0;
     background-color: #333;
-
 }
 
 .footer-section ul {
@@ -294,7 +290,6 @@ footer {
     text-decoration: none;
     transition: color 0.3s ease;
     align-items: center;
-
 }
 
 .footer-section .social a.facebook {
@@ -336,4 +331,92 @@ footer {
 
 .footer-bottom a:hover {
     color: #fff;
+}
+
+/* Media Queries */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .menu a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .video-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vid {
+        height: 200px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        width: 80%;
+    }
+}
+
+/* Responsive design */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .menu a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .video-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vid {
+        height: 200px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        width: 80%;
+    }
+}
+@media (max-width: 739px) {
+    .navbar .menu{
+        display:grid;
+    }
 }

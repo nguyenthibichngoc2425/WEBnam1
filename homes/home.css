@@ -507,3 +507,28 @@ footer {
 .footer-bottom a:hover {
     color: #fff;
 }
+@media (min-width: 740px) and (max-width: 1023px){
+    .title h2{
+        width: auto;
+    }
+    .about{
+        display:flex;
+    }
+}
+@media (max-width: 739px){
+    .navbar{
+        width: 256px;
+        display: flex;
+        padding :0 10px;
+    }
+    
+    .title h2{
+        width: auto;
+    }
+    .about img{
+        width: auto;
+    }
+    .about-text{
+        width: auto;
+    }
+}
